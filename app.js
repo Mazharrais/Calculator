@@ -8,6 +8,7 @@ var screen = document.getElementById("display");
 var screenSet;
 var operator;
 
+
 function pressBtn(num){
     if(screenSet){
     screen.value = num;
@@ -46,6 +47,13 @@ function getResult(){
     screen.value = result / Number(screen.value);
     break;
     }
+}
+
+function deleteNum(){
+ screen.value = screen.value.toString().slice(0, -1);
+
+ console.log(screen.value);
+
 }
 
 
