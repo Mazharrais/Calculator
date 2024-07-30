@@ -20,6 +20,13 @@ else{
    
 }
 
+function setDecimal(){
+    if(screen.value.indexOf('.')== -1){
+        screen.value += '.';
+        console.log(screen.value);
+    }
+}
+
 function setOperator(ope){
 
     operator = ope;
