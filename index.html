@@ -14,33 +14,33 @@
         <input type="text" name="display" id="display">
       </div>
       <div>
-        <input type="button" value="AC" onclick="display.value = ''  ">
+        <input type="button" value="AC" onclick="clrAll()">
         <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) ">
         <input type="button" value="." onclick="pressBtn('.')">
-        <input type="button" value="/" onclick="display.value += '/'  ">
+        <input type="button" value="/" onclick="setOperator('/')">
       </div>
       <div>
         <input type="button" value="7" onclick="pressBtn('7')">
         <input type="button" value="8" onclick="pressBtn('8')">
         <input type="button" value="9" onclick="pressBtn('9')">
-        <input type="button" value="*" onclick="display.value += '*'  ">
+        <input type="button" value="*" onclick="setOperator('*')">
       </div>
       <div>
         <input type="button" value="4" onclick="pressBtn('4')">
         <input type="button" value="5" onclick="pressBtn('5')">
         <input type="button" value="6" onclick="pressBtn('6')">
-        <input type="button" value="-" onclick="display.value += '-'  ">
+        <input type="button" value="-" onclick="setOperator('-')">
       </div>
       <div>
         <input type="button" value="1" onclick="pressBtn('1')">
         <input type="button" value="2" onclick="pressBtn('2')">
         <input type="button" value="3" onclick="pressBtn('3')">
-        <input type="button" value="+" onclick="display.value += '+'  ">
+        <input type="button" value="+" onclick="setOperator('+')">
       </div>
       <div>
         <input type="button" value="00" onclick="pressBtn('00')">
         <input type="button" value="0" onclick="pressBtn('0')">
-        <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
+        <input type="button" value="=" onclick="getResult('=')" class="equal">
       
       </div>
        </form>
